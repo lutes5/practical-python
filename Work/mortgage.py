@@ -15,4 +15,4 @@ while principal > 0:
     while month < 12:
         total_paid = total_paid + extra
         month = month + 1
-        print('Total paid', total_paid)
+        print(month, total_paid)
