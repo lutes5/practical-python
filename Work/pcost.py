@@ -10,4 +10,4 @@ with open('Downloads/portfolio.csv', 'rt') as f:
         price = float(row[2])
         totalcost += shares * price
         
-print('Total cost: ', totalcost)
+print('Total cost', totalcost)
