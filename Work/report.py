@@ -51,7 +51,7 @@ def read_prices(filename):
     return stock_prices
                 
 portfolio = read_portfolio('Downloads/portfolio.csv')
-stock_prices = read_prices('Downloads/prices.csv')
+prices = read_prices('Downloads/prices.csv')
 
 # Calculate the total cost of the portfolio
 total_cost = 0.0
