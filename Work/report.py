@@ -68,3 +68,16 @@ for s in portfolio:
 
 print('Current value', total_value)
 print('Gain', total_value - total_cost)
+
+# Exercise 2.9 
+
+def make_report(portfolio, prices)
+    ''' takes a list of stocks and dictionary of prices as input and returns
+    a list of tuples '''
+    rows = []
+    for stock in portfolio:
+        current_price = prices[stock['name']]
+        change = current_price - stock['price']
+        summary = (stock['name'], stock['price'], current_price, change)
+        rows = rows.append(summary)
+    return rows
