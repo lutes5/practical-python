@@ -71,7 +71,7 @@ print('Gain', total_value - total_cost)
 
 # Exercise 2.9 
 
-def make_report(portfolio, prices)
+def make_report(portfolio, prices):
     '''
     Takes a list of stocks and dictionary of prices as input and returns
     a list of tuples
