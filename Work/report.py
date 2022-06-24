@@ -64,7 +64,7 @@ print('Total cost', total_cost)
 # Compute the current value of the portfolio
 total_value = 0.0
 for s in portfolio:
-    total_value += s['shares']*stock_prices[s['name']]
+    total_value += s['shares']*prices[s['name']]
 
 print('Current value', total_value)
 print('Gain', total_value - total_cost)
