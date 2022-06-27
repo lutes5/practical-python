@@ -29,10 +29,10 @@ def read_portfolio(filename):
             row = line.split(',')
             stock = {
                 'name' : row[0]
-                'shares' : int(row[1]
+                'shares' : int(row[1])
                 'price' : float(row[2])
             }
-            portfolio.append(stock)
+        portfolio.append(stock)
     return portfolio
 
 # Exercise 2.6 
