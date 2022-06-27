@@ -79,6 +79,12 @@ def make_report(portfolio, prices):
     for stock in portfolio:
         current_price = prices[stock['name']]
         change = current_price - stock['price']
-        summary = (stock['name'], stock['price'], current_price, change)
+        summary = (stock['name'], stock['shares'], current_price, change)
         rows.append(summary)
     return rows
+
+report = make_report(portfolio, prices)
+for r in report:
+    print('%10s %10d %10.2f %10.2f' % r)
+    
+    
