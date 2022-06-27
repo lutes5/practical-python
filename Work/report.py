@@ -25,7 +25,6 @@ def read_portfolio(filename):
     with open(filename, 'rt') as f:
         rows = csv.reader(f)
         headers = next(rows)
-        row = line.split(',')
         for row in rows:
             stock = {
                 'name' : row[0],
