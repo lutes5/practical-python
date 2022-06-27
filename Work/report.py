@@ -20,16 +20,19 @@ import csv
 
 def read_portfolio(filename):
     '''Creates dictionary of a portfolio file'''
-    portfolio = {}
+    portfolio = []
     
     with open(filename, 'rt') as f:
         row = csv.reader(f)
         headers = next(row)
         for line in f:
             row = line.split(',')
-            portfolio[row[0]] = 'name'
-            portfolio[row[1]] = 'shares'
-            portfolio[row[2]] = 'price'
+            stock = {
+                'name' : row[0]
+                'shares' : int(row[1]
+                'price' : float(row[2])
+            }
+            portfolio.append(stock)
     return portfolio
 
 # Exercise 2.6 
