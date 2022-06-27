@@ -84,8 +84,7 @@ def make_report(portfolio, prices):
     return rows
 
 report = make_report(portfolio, prices)
-headers = ('Name', 'Shares', 'Price', 'Change')
-'{:>10s} {:>10s} {:>10} {:>10s}'.format(headers)
+'{:>10s} {:>10s} {:>10} {:>10s}'.format('Name', 'Shares', 'Price', 'Change')
 
 for r in report:
     print('%10s %10d %10.2f %10.2f' % r)
