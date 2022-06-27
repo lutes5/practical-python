@@ -23,10 +23,10 @@ def read_portfolio(filename):
     portfolio = []
     
     with open(filename, 'rt') as f:
-        row = csv.reader(f)
-        headers = next(row)
-        for line in f:
-            row = line.split(',')
+        rows = csv.reader(f)
+        headers = next(rows)
+        row = line.split(',')
+        for row in rows:
             stock = {
                 'name' : row[0]
                 'shares' : int(row[1])
