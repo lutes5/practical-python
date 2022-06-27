@@ -27,8 +27,6 @@ def portfolio_cost(filename):
             except ValueError:
                 print(f'Row {rowno}: Bad row: {row}')
     return total_cost
-        
-print('Total cost', totalcost)
 
 cost = portfolio_cost('Downloads/missing.csv')
 
