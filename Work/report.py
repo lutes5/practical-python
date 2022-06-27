@@ -87,6 +87,7 @@ report = make_report(portfolio, prices)
 '{:>10s} {:>10s} {:>10} {:>10s}'.format('Name', 'Shares', 'Price', 'Change')
 
 for r in report:
+    '{:>10s} {:>10s} {:>10} {:>10s}'.format('Name', 'Shares', 'Price', 'Change')
     print('%10s %10d %10.2f %10.2f' % r)
     
     
