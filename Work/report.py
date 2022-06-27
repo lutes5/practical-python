@@ -27,9 +27,9 @@ def read_portfolio(filename):
         headers = next(row)
         for line in f:
             row = line.split(',')
-            portfolio[row[0]] = 'name'
-            portfolio[row[1]] = int(row[1])
-            portfolio[row[2]] = float(row[2])
+            'name' = row[0]
+            'shares' = int(row[1])
+            'price' = float(row[2])
     return portfolio
 
 # Exercise 2.6 
