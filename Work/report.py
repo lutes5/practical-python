@@ -20,9 +20,9 @@ import csv
 
 def read_portfolio(filename):
     '''Creates dictionary of a portfolio file'''
-    portfolio = []
+    portfolio = {}
     
-    with open(filename) as f:
+    with open(filename, 'rt') as f:
         rows = csv.reader(f)
         headers = next(rows)
         for row in rows:
