@@ -27,7 +27,7 @@ def portfolio_cost(filename):
                 totalcost += nshares * price
             except ValueError:
                 print(f'Row {rowno}: Bad row: {row}')
-    return record
+    return total_cost
 
 cost = portfolio_cost('Downloads/portfoliodate.csv')
 cost = portfolio_cost('Downloads/missing.csv')
